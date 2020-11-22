@@ -6,8 +6,10 @@ import numpy as np
 
 app = Flask(__name__)
 
-model = load_model('deployment_28042020')
-cols = ['age', 'sex', 'bmi', 'children', 'smoker', 'region']
+model = load_model('wine_model')
+cols = ['fixed acidity','volatile acidity' , 'citric acid' , 'residual sugar'
+        , 'chlorides' ,'free sulfur dioxide', 'total sulfur dioxide',
+        'density',  'pH', 'sulphates',  'alcohol']
 
 # render default webpage
 @app.route('/')
