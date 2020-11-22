@@ -1,4 +1,4 @@
-pycaret[classification]==2.2.1
+pycaret==2.2
 Flask==1.1.2
 Jinja2==2.11.2
 gunicorn==20.0.4
